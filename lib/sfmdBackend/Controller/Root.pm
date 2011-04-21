@@ -35,7 +35,8 @@ sub index :Path :Args(0) {
 
 sub getCard1 :Local {
 	my ($self, $c) = @_;
-	$c->stash->{message} = $c->user->username;	
+	$c->stash->{message} = $c->sessionid;
+	$c->session->{'Catalyst::Plugin::Session'} = 'bug';	
 	$c->stash->{current_view} = 'WebServiceView'
 }
 

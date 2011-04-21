@@ -1,0 +1,11 @@
+script/sfmdbackend_create.pl model DB DBIC::Schema sfmdBackend::ApplicationSchema \ create=static components=TimeStamp dbi:mysql:spoonfedDB root admin
+
+
+Example:
+/script/dasgift_create.pl model DB DBIC::Schema MyApp::Schema create=static components=TimeStamp dbi:mysql:dbname:db.dbhostname.com username p@55w0rd
+
+
+Git Committ
+Create Admin Views -> WebViews
+Create Admin Login Action
+Test Web View and JSON Views
